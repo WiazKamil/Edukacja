@@ -136,7 +136,10 @@
         else{
             $date33[2]=$date22[2]-$date11[2];
         }
-
+        if($date33[1]<0){
+            $date33[1]=12+$date33[1];
+            $date33[0]=$date33[0]-1;
+        }
 
         //print_r($date33);
         
