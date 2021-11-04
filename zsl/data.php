@@ -115,9 +115,12 @@
         }
 
         //obliczanie dni
+
+$dni31={1,3,5,7,8,10,12};
+
         if($date22[2]-$date11[2]<0){
             $date33[1]=$date33[1]-1;
-            if($date22[1]%2==0){
+            if(in_array($date22[1]-1,$dni31){
                 $date33[2]=31-($date11[2]-$date22[2]);
             }
             else if($date22[1]-1==2){
